@@ -11,7 +11,7 @@ public class Map extends Item {
 		this.isAvailable = isAvailable;
 		this.location = location;
 	}
-
+ssss
 	public String getName() {
 		return name;
 	}

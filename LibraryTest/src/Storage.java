@@ -38,11 +38,19 @@ public class Storage {
 
 		Item item = new Book(name, genre, isAvailble, author, id);
 		Items.add(item);
-
 	}
 	
-	public void removeBook (String name, String genre, boolean isAvailble, String author, int id)
+	public void removeBook (int id)
 	{
-		// 
+		for (int i = 0; i < Items.size(); i++)
+			if (id== Items.get(i).id)
+				Items.remove(i);
+	}
+	
+	public void updateItem(int id)
+	{
+		for (int i = 0; i < Items.size(); i++)
+			if (id== Items.get(i).id)
+				Items.remove(i);
 	}
 }
